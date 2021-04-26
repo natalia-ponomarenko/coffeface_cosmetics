@@ -1,0 +1,43 @@
+.try {
+  &__main-background {
+    background-size: cover;
+    width: 100%;
+  }
+
+  &__background,
+  &__title,
+  &__photo {
+    display: none;
+  }
+
+  @media (max-width: $mobile-screen-breakpoint) {
+    align-items: center;
+    background-color: $maincolor;
+    display: flex;
+    flex-direction: column;
+
+    &__main-background {
+      display: none;
+    }
+
+    &__title,
+    &__photo {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 40px;
+      font-weight: $font-extra-light;
+      line-height: 48px;
+      max-width: 300px;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    &__photo {
+      top: 200px;
+    }
+  }
+}

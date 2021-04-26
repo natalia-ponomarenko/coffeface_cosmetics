@@ -1,0 +1,164 @@
+.header {
+  // background-color: $maincolor;
+  // overflow: hidden;
+  // background-image: url("../images/AK8I5057-editrrr1.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+
+  // background-position: center;
+  // height: 100vh;
+
+  &__preheader {
+    background-color: $dark-color;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  &__preheader-text {
+    color: $light-color;
+    font-size: 12px;
+    font-weight: $font-light;
+    line-height: 18px;
+    padding: 10px;
+  }
+
+  &__logo {
+    padding-top: 30px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+
+  &__mobile-icon {
+    display: none;
+  }
+
+  &__shopping-cart {
+    padding: 30px 0;
+  }
+
+  &__shopping-cart--group {
+    position: relative;
+  }
+
+  &__shopping-cart--group:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+  }
+
+  &__shopping-count {
+    position: absolute;
+    right: 15px;
+    top: 25px;
+  }
+
+  &__link-shopping {
+    padding: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 70px 0 0;
+    width: 100%;
+  }
+
+  &__description {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-top: 150px;
+  }
+
+  &__title {
+    color: $dark-color;
+    font-size: 36px;
+    font-weight: $font-light;
+    line-height: 50px;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  &__paragraph {
+    font-size: 20px;
+    font-weight: $font-regular;
+    line-height: 30px;
+    max-width: 390px;
+    padding-bottom: 35px;
+    text-align: center;
+  }
+
+  &__button {
+    background-color: $dark-color;
+    border-style: none;
+    font-size: 16px;
+    font-weight: $font-light;
+    line-height: 24px;
+    padding: 23px 120px;
+  }
+
+  @media (max-width: $mobile-screen-breakpoint) {
+    &__mobile-icon {
+      display: block;
+      height: 25px;
+    }
+
+    &__top {
+      justify-content: flex-end;
+      padding: 0 20px;
+    }
+
+    &__shopping-cart {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 0 0 20px;
+    }
+
+    &__shopping-count {
+      right: 5px;
+    }
+
+    &__link-shopping {
+      padding: 0 10px;
+    }
+
+    &__wrapper {
+      background: linear-gradient(2.76deg, #fdfaf8 11.68%, rgba(255, 255, 255, 0) 80.51%);
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    &__description {
+      padding: 0;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__button {
+      font-size: 14px;
+      font-weight: $font-regular;
+      line-height: 21px;
+      margin-bottom: 60px;
+    }
+
+    &__title {
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 39px;
+      width: 311px;
+    }
+
+    &__paragraph {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

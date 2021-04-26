@@ -1,0 +1,50 @@
+.info {
+  background-color: $dark-color;
+  position: relative;
+
+  &__text {
+    padding: 100px 100px 130px 170px;
+  }
+
+  &__logo {
+    height: 30px;
+  }
+
+  &__paragraph {
+    color: $light-color;
+    font-family: 'Poppins', serif;
+    font-size: 22px;
+    font-weight: $font-light;
+    line-height: 170%;
+    max-width: 430px;
+  }
+
+  &__photo {
+    height: 570px;
+    left: 55%;
+    position: absolute;
+    top: -85px;
+    z-index: 3;
+  }
+
+  @media screen and (max-width: $mobile-screen-breakpoint) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__photo {
+      height: 500px;
+      left: 0;
+      object-fit: cover;
+      position: relative;
+      top: -40px;
+      width: 330px;
+    }
+
+    &__text {
+      padding: 30px 20px 60px;
+      text-align: center;
+    }
+  }
+}

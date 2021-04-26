@@ -1,0 +1,68 @@
+.usage {
+  align-items: center;
+  background-color: $maincolor;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+
+  &__background {
+    max-width: 820px;
+    z-index: 0;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: $font-light;
+    line-height: 42px;
+    position: relative;
+    top: -120px;
+    z-index: 1;
+  }
+
+  &__ways {
+    display: grid;
+    gap: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 130px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__way {
+    position: relative;
+  }
+
+  &__icon {
+    left: 40px;
+    position: absolute;
+    top: 35px;
+    z-index: 3;
+  }
+
+  &__minititle {
+    font-size: 16px;
+    font-weight: $font-regular;
+    line-height: 24px;
+  }
+
+  @media (max-width: $mobile-screen-breakpoint) {
+    &__ways {
+      gap: 70px;
+      grid-template-columns: 1fr;
+    }
+
+    &__background {
+      object-fit: cover;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 45px;
+      text-align: center;
+      width: 335px;
+    }
+  }
+}

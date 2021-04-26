@@ -1,0 +1,79 @@
+.testimonials {
+  overflow: hidden;
+
+  &__block {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 90px 0 280px;
+  }
+
+  &__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__head {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: $font-extra-light;
+    line-height: 60px;
+    padding-bottom: 30px;
+  }
+
+  &__slider {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  &__slider--right {
+    transform: scale(-1, 1);
+  }
+
+  &__photo {
+    height: 86px;
+  }
+
+  &__name {
+    font-size: 22px;
+    font-weight: $font-middle;
+    line-height: 37px;
+    margin: 0;
+    padding: 0 0 0 30px;
+  }
+
+  &__paragraph {
+    padding-top: 20px;
+    text-align: center;
+    width: 500px;
+  }
+
+  &__paragraph--pseudo {
+    opacity: 0.5;
+  }
+
+  &__pseudo-slider {
+    display: flex;
+    gap: 130px;
+  }
+
+  @media (max-width: $mobile-screen-breakpoint) {
+    &__block {
+      padding-bottom: 130px;
+    }
+    
+    &__slider {
+      padding: 0 35px;
+    }
+
+    &__paragraph {
+      width: 335px;
+    }
+  }
+}

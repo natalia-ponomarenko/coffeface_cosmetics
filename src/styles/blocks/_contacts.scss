@@ -1,0 +1,15 @@
+.contacts {
+  background-color: $dark-color;
+  display: flex;
+  height: 500px;
+
+  &__wrapper {
+    left: -15%;
+    position: relative;
+    top: -200px;
+  }
+
+  &__logo {
+    height: 50px;
+  }
+}
