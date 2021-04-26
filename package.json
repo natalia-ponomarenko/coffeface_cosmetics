@@ -1,9 +1,11 @@
 {
-  "name": "Coffeeface cosmetics",
+  "name": "Coffeeface_cosmetics",
   "version": "1.0.0",
   "description": "Template for js-html",
   "main": "src/index.html",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d docs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rm -rf ./docs",
     "build": "parcel build --out-dir docs --public-url ./ ./src/index.html",

@@ -42,4 +42,12 @@
   &__slider-right {
     transform: scale(-1, 1);
   }
+
+  @media (max-width: $mobile-screen-breakpoint) {
+    text-align: center;
+    
+    &__gallery {
+      flex-direction: column;
+    }
+  }
 }

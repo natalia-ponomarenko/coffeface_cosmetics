@@ -53,6 +53,11 @@
     align-items: center;
     flex-direction: column;
     padding-top: 900px;
+    
+    &__group {
+      display: flex;
+      flex-direction: column;
+    }
 
     &__title {
       font-size: 30px;
