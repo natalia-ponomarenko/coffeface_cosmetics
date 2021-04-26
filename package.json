@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/natalia-ponomarenko/coffeface_cosmetics/issues"
   },
-  "homepage": "https://github.com/natalia-ponomarenko/coffeface_cosmetics#readme",
+  "homepage":"https://natalia-ponomarenko.github.io/coffeface_cosmetics",
   "devDependencies": {
     "concurrently": "^6.0.2",
     "eslint": "^7.24.0",
