@@ -1,5 +1,5 @@
 {
-  "name": "template-for-js-html",
+  "name": "Coffeeface cosmetics",
   "version": "1.0.0",
   "description": "Template for js-html",
   "main": "src/index.html",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/natalia-ponomarenko/Template-for-js-html.git"
+    "url": "git+https://github.com/natalia-ponomarenko/coffeface_cosmetics.git"
   },
   "keywords": [
     "template",
@@ -31,14 +31,15 @@
   "author": "Nataliia Ponomarenko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/natalia-ponomarenko/Template-for-js-html/issues"
+    "url": "https://github.com/natalia-ponomarenko/coffeface_cosmetics/issues"
   },
-  "homepage": "https://github.com/natalia-ponomarenko/Template-for-js-html#readme",
+  "homepage": "https://github.com/natalia-ponomarenko/coffeface_cosmetics#readme",
   "devDependencies": {
     "concurrently": "^6.0.2",
     "eslint": "^7.24.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
+    "gh-pages": "^3.1.0",
     "husky": "^6.0.0",
     "parcel-bundler": "^1.12.5",
     "sass": "^1.32.10",
