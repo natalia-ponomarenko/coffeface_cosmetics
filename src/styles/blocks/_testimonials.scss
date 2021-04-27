@@ -27,17 +27,12 @@
     padding-bottom: 30px;
   }
 
-  &__slider {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-
-  &__slider--right {
-    transform: scale(-1, 1);
-  }
-
   &__photo {
     height: 86px;
+    
+    &:hover {
+      @include hover-pictures
+    }
   }
 
   &__name {
@@ -66,10 +61,6 @@
   @media (max-width: $mobile-screen-breakpoint) {
     &__block {
       padding-bottom: 130px;
-    }
-    
-    &__slider {
-      padding: 0 35px;
     }
 
     &__paragraph {

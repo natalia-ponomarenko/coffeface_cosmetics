@@ -53,6 +53,10 @@
 
   &__link-icon {
     padding: 10px 20px;
+    
+    &:hover {
+      @include hover-pictures
+    }
   }
 
   &__social {
@@ -68,6 +72,10 @@
 
   &__icon-payment {
     padding: 10px;
+
+    &:hover {
+      @include hover-pictures
+    }
   }
 
   &__line {

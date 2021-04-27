@@ -1,39 +1,45 @@
 .blog {
-  background-color: $dark-color;
-  padding-bottom: 700px;
   position: relative;
+  padding-bottom: 700px;
+  background-color: $dark-color;
 
   &__picture {
-    left: 20%;
-    max-width: 870px;
     position: absolute;
+    max-width: 870px;
+    left: 20%;
     top: -150px;
     z-index: 1;
   }
 
   &__background {
-    left: 50%;
     position: absolute;
+    left: 50%;
   }
 
   &__title {
-    color: $light-color;
-    font-size: 40px;
-    font-weight: $font-extra-light;
-    left: 45%;
-    line-height: 60px;
     position: absolute;
     top: 50%;
+    left: 45%;
+    font-size: 40px;
+    font-weight: $font-extra-light;
+    line-height: 60px;
+    color: $light-color;
   }
 
   &__section {
-    display: grid;
-    gap: 12px;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 45px;
     position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
     top: 460px;
     width: 100%;
+    padding: 0 45px;
+  }
+
+  &__post {
+    &:hover {
+      @include hover-pictures
+    }
   }
 
   &__image {
@@ -41,25 +47,22 @@
   }
 
   &__text {
+    max-width: 360px;
+    padding-top: 22px;
     font-size: 18px;
     font-weight: $font-regular;
     line-height: 29px;
-    max-width: 360px;
-    padding-top: 22px;
   }
 
   @media (max-width: $mobile-screen-breakpoint) {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-centered-column;
     padding-bottom: 250px;
 
     &__picture {
-      height: 160px;
-      left: 0;
       position: relative;
       top: -80px;
+      left: 0;
+      height: 160px;
     }
 
     &__background {

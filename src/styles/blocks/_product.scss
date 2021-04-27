@@ -21,6 +21,10 @@
     position: relative;
     top: 80px;
     z-index: 2;
+
+    &:hover {
+      @include hover-pictures
+    }
   }
 
   &__info {
@@ -78,6 +82,10 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    
+    &:hover {
+      @include hover-pictures
+    }
   }
 
   &__price-full {
@@ -101,7 +109,6 @@
     width: 90px;
   }
 
-
   &__price-discount {
     font-size: 30px;
     font-weight: $font-extra-light;
@@ -112,6 +119,10 @@
     background-color: $dark-color;
     border-style: none;
     padding: 23px 118px;
+
+    &:hover {
+      @include hover-button
+    }
   }
 
   @media (max-width: $mobile-screen-breakpoint) {

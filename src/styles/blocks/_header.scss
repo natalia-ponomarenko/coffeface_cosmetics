@@ -1,4 +1,6 @@
 .header {
+  background-color: $maincolor;
+
   &__preheader {
     background-color: $dark-color;
     display: flex;
@@ -34,11 +36,10 @@
 
   &__shopping-cart--group {
     position: relative;
-  }
 
-  &__shopping-cart--group:hover {
-    transform: scale(1.1);
-    transition: 500ms;
+    &:hover {
+      @include hover-pictures
+    }
   }
 
   &__shopping-count {
@@ -97,13 +98,19 @@
     font-weight: $font-light;
     line-height: 24px;
     padding: 23px 120px;
+
+    &:hover {
+      @include hover-button;
+    }
   }
 
   @media (max-width: $mobile-screen-breakpoint) {
     overflow: hidden;
+
     &__image-group {
       flex-direction: column;
       position: relative;
+      height: 600px
     }
 
     &__image-wrapper {
@@ -122,14 +129,12 @@
 
     &__background {
       position: relative;
-      margin-bottom: 100px;
-      width: 450px;
-      height: 500px;
+      width: 400px;
+      height: 600px;
       background-image: url('../images/AK8I5057-editrrr1.png');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      // padding-bottom: 100px;
     }
 
     &__mobile-icon {

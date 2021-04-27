@@ -26,21 +26,17 @@
     max-width: 200px;
   }
 
+  &__link {
+    color: $dark-color;
+    text-decoration: none;
+  }
+
   &__text {
     font-size: 14px;
     font-weight: $font-light;
     line-height: 125.5%;
     margin: 75px 0 55px;
     text-align: center;
-  }
-
-  &__slider {
-    background-color: $light-color;
-    border-style: none;
-  }
-
-  &__slider-right {
-    transform: scale(-1, 1);
   }
 
   @media (max-width: $mobile-screen-breakpoint) {

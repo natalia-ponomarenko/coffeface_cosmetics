@@ -1,4 +1,9 @@
 .button--link {
   color: $light-color;
   text-decoration: none;
+
+  &:hover {
+    transition: 500ms;
+    color: $accent-color;
+  }
 }

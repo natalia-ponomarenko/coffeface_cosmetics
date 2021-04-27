@@ -31,6 +31,10 @@
 
   &__way {
     position: relative;
+
+    &:hover {
+      @include hover-pictures
+    }
   }
 
   &__icon {
