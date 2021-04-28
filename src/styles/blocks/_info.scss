@@ -1,6 +1,6 @@
 .info {
-  background-color: $dark-color;
   position: relative;
+  background-color: $dark-color;
 
   &__text {
     padding: 100px 100px 130px 170px;
@@ -12,39 +12,35 @@
 
   &__paragraph {
     color: $light-color;
-    font-family: 'Poppins', serif;
     font-size: 22px;
     font-weight: $font-light;
-    line-height: 170%;
+    line-height: 37px;
     max-width: 430px;
   }
 
   &__photo {
+    position: absolute;
     height: 570px;
     left: 55%;
-    position: absolute;
     top: -85px;
     z-index: 3;
   }
 
   @media screen and (max-width: $mobile-screen-breakpoint) {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-centered-column;
 
     &__photo {
+      position: relative;
       height: 500px;
       left: 0;
-      object-fit: cover;
-      position: relative;
       top: -80px;
       width: 330px;
       margin-top: 50px;
+      object-fit: cover;
     }
 
     &__text {
-      padding: 30px 20px 60px;
+      padding: 0px 20px 60px;
       text-align: center;
     }
   }

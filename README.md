@@ -1,16 +1,17 @@
 # Coffeeface Landing Page
 
 # Description
-- This page is adaptive to next devices: Notebook (> 1280px) Mobile (> 320px)
+- This page is adaptive to next devices: Notebook (> 1280px) Mobile (> 375px)
 
 # Links
 - [DEMO LINK](https://natalia-ponomarenko.github.io/coffeface_cosmetics)
 
-- [Code](https://github.com/natalia-ponomarenko/coffeeface-shop)
-- [The landing page](https://www.figma.com/file/q2NaLB072YB1uLCHqNSICI/test?node-id=1%3A2)
+- [Code](https://github.com/natalia-ponomarenko/coffeface_cosmetics)
+- [Figma](https://www.figma.com/file/q2NaLB072YB1uLCHqNSICI/test?node-id=1%3A2)
 
 # Technologies
-- JavaScript
+- JQuery
+- Swiper
 - BEM methodology
 - SASS
 - HTML5/CSS3
@@ -19,7 +20,7 @@
 1. Fork and clone this repository
 2. npm i
 3. npm start
-4. open your browser at http://localhost:3000
+4. open your browser at http://localhost:1234
 
 # Dependencies
 - Node v12.16.3 and higher

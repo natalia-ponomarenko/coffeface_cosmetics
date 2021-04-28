@@ -14,3 +14,45 @@
   align-items: center;
   justify-content: center;
 }
+
+
+@mixin flex-relative {
+  display: flex;
+  position: relative;
+}
+
+@mixin flex-absolute {
+  position: absolute;
+  display: flex;
+}
+
+@mixin flex-spaced {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-centered-column {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-centered-aligned {
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+@mixin flex-column-reversed {
+  align-items: center;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+
+

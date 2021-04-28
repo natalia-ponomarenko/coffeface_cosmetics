@@ -1,25 +1,21 @@
 .insta {
   &__title {
+    text-align: center;
     font-size: 40px;
     font-weight: $font-extra-light;
     letter-spacing: -0.03em;
     line-height: 34px;
     margin: 113px 0 65px;
-    text-align: center;
     text-transform: uppercase;
   }
 
   &__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
+    @include flex-centered-column;
   }
 
   &__gallery {
-    display: flex;
+    @include flex-centered;
     gap: 7px;
-    justify-content: center;
   }
 
   &__image {
@@ -32,11 +28,11 @@
   }
 
   &__text {
+    margin: 75px 0 55px;
+    text-align: center;
     font-size: 14px;
     font-weight: $font-light;
     line-height: 125.5%;
-    margin: 75px 0 55px;
-    text-align: center;
   }
 
   @media (max-width: $mobile-screen-breakpoint) {

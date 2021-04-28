@@ -11,6 +11,7 @@
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+  display: none;
 }
 
 .burger-menu_button:hover .burger-menu_lines {
@@ -38,16 +39,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
 
-.burger-menu_lines::before {
-  content: '';
-  top: -12px;
-}
+  &::before {
+    content: '';
+    top: -12px;
+  }
 
-.burger-menu_lines::after {
-  content: '';
-  top: 12px;
+  &::after {
+    content: '';
+    top: 12px;
+  }
 }
 
 .burger-menu_active .burger-menu_lines {
@@ -119,4 +120,10 @@
 .burger-menu_active .burger-menu_overlay {
   display: block;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: $mobile-screen-breakpoint) {
+.burger-menu_button {
+  display: block;
+  }
 }
