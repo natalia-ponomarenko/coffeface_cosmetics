@@ -1,4 +1,4 @@
-.burger-menu_button {
+.burger-menu__button {
   position: absolute;
   top: 55px;
   left: 30px;
@@ -14,17 +14,17 @@
   display: none;
 }
 
-.burger-menu_button:hover .burger-menu_lines {
+.burger-menu__button:hover .burger-menu__lines {
   filter: brightness(0.7);
 }
 
-.burger-menu_button:hover {
+.burger-menu__button:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.burger-menu_lines::before,
-.burger-menu_lines::after,
-.burger-menu_lines {
+.burger-menu__lines::before,
+.burger-menu__lines::after,
+.burger-menu__lines {
   position: absolute;
   width: 50px;
   height: 3px;
@@ -35,7 +35,7 @@
   transition: 0.4s;
 }
 
-.burger-menu_lines {
+.burger-menu__lines {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -51,19 +51,19 @@
   }
 }
 
-.burger-menu_active .burger-menu_lines {
+.burger-menu__active .burger-menu__lines {
   background-color: transparent;
 }
-.burger-menu_active .burger-menu_lines::before {
+.burger-menu__active .burger-menu__lines::before {
   top: 0;
   transform: rotate(45deg);
 }
-.burger-menu_active .burger-menu_lines::after{
+.burger-menu__active .burger-menu__lines::after{
   top: 0;
   transform: rotate(-45deg);
 }
 
-.burger-menu_nav {
+.burger-menu__nav {
   padding-top: 120px;
   position: fixed;
   top: 0;
@@ -80,7 +80,7 @@
   transition: 0.8s;
 }
 
-.burger-menu_active .burger-menu_nav {
+.burger-menu__active .burger-menu__nav {
   left: 0;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -88,7 +88,7 @@
   transition: 0.4s;
 }
 
-.burger-menu_link {
+.burger-menu__link {
   padding: 18px 35px;
   font-size: 18px;
   text-decoration: none;
@@ -99,15 +99,15 @@
   border-bottom: 1px solid #fff;
 }
 
-.burger-menu_link:first-child {
+.burger-menu__link:first-child {
   border-top: 1px solid #fff;
 }
 
-.burger-menu_link:hover {
+.burger-menu__link:hover {
   filter: brightness(0.9);
 }
 
-.burger-menu_overlay {
+.burger-menu__overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -117,13 +117,13 @@
   z-index: 10;
 }
 
-.burger-menu_active .burger-menu_overlay {
+.burger-menu__active .burger-menu__overlay {
   display: block;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: $mobile-screen-breakpoint) {
-.burger-menu_button {
+.burger-menu__button {
   display: block;
   }
 }

@@ -37,6 +37,8 @@
   },
   "homepage": "https://natalia-ponomarenko.github.io/coffeface_cosmetics",
   "devDependencies": {
+    "@mate-academy/bemlint": "^0.1.1",
+    "bemlint": "^1.7.0",
     "concurrently": "^6.0.2",
     "eslint": "^7.24.0",
     "eslint-config-airbnb-base": "^14.2.1",
