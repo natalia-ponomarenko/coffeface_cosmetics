@@ -10,7 +10,7 @@
   }
 
   &__wrapper {
-    @include flex-centered-column;
+    @include flex-strictly-centered-column;
   }
 
   &__gallery {
