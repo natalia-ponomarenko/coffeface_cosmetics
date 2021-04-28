@@ -37,6 +37,7 @@
 
   @media (max-width: $mobile-screen-breakpoint) {
     text-align: center;
+    overflow: hidden;
     
     &__gallery {
       flex-direction: column;
